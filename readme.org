@@ -17,8 +17,8 @@ helpfully prevent using incompatible mods this way).
 
 For the time being, mods will be distributed as scd's and function as "usermods"
 in the existing LOUD scheme. That means, to include them for discovery, you can
-visit the `releases` link and download the current release which will be a
-simple zip archive with multiple .scd files.
+visit the `releases` link and download the [[https://github.com/loudpatches/chadcomms/releases/latest][current release]] which will be
+one or more .scd files.
 
 Hopefully these will be relatively small (<=10mb) since most of the changes are
 lua related and not assets.
@@ -30,12 +30,17 @@ create it.
 For example, assume we have the Steam version of SCFA, and we have LOUD
 installed in the default location:
 
-`C:\Program Files (x86)\Steam\steamapps\common\Supreme commander Forged Alliance\LOUD`
+#+BEGIN_SRC shell
+C:\Program Files (x86)\Steam\steamapps\common\Supreme commander Forged Alliance\LOUD
+#+END_SRC
+
 
 then we would place (download and copy) any user mods (SCD files or even extracted mod folders)
 in `usermods`:
 
-`C:\Program Files (x86)\Steam\steamapps\common\Supreme commander Forged Alliance\LOUD\usermods\chadcomms.scd`
+#+BEGIN_SRC shell
+C:\Program Files (x86)\Steam\steamapps\common\Supreme commander Forged Alliance\LOUD\usermods\chadcomms.scd
+#+END_SRC
 
 etc.
 
