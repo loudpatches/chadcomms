@@ -75,8 +75,9 @@ need to grab the files to play.  Future automation/bundling may alleviate that t
 
 Note: since these are user mods, 
 
-**DO NOT EXPECT support from the LOUD maintainers or ask for feature requests relative 
-to the legacy behavior in any of these mods**.
+*DO NOT EXPECT support from the LOUD maintainers or ask for feature requests*
+*relative to the legacy behavior in any of these mods*.
+
 
 Interested parties can file issues in the github repository, although I do not
 envision drastic changes. I may incorporate bug fixes and any desirable changes
