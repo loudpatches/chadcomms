@@ -1,0 +1,78 @@
+* Overview
+
+This is an community distribution of some mods intended to work with LOUD as
+usermods. Several of the mods are direct forks of existing mods where the legacy
+behavior is deemed desirable or preferable over the course of the project
+maintainer. The goal is to provide users the option to retain legacy behavior
+and playstyle, as opposed to riding the current change waves. In any case, mods
+posted here will be additive and opt-in, as opposed to the base LOUD
+distribution which can change/deprecate on a whim irrespective of user interest.
+
+Any forks will be delineated or renamed to avoid confusion, and will have
+dependencies and conflicts enumerated in their mod_info.lua to ensure
+that there is no confusion prior to launching a game (the mod manager will
+helpfully prevent using incompatible mods this way).
+
+* Usage
+
+For the time being, mods will be distributed as scd's and function as "usermods"
+in the existing LOUD scheme. That means, to include them for discovery, you can
+visit the `releases` link and download the current release which will be a
+simple zip archive with multiple .scd files.
+
+Hopefully these will be relatively small (<=10mb) since most of the changes are
+lua related and not assets.
+
+Make sure the .scd files (again just zip archives) end up in the `usermods`
+folder in your LOUD install location. If `usermods` does not exist, you can
+create it.
+
+For example, assume we have the Steam version of SCFA, and we have LOUD
+installed in the default location:
+
+`C:\Program Files (x86)\Steam\steamapps\common\Supreme commander Forged Alliance\LOUD`
+
+then we would place (download and copy) any user mods (SCD files or even extracted mod folders)
+in `usermods`:
+
+`C:\Program Files (x86)\Steam\steamapps\common\Supreme commander Forged Alliance\LOUD\usermods\chadcomms.scd`
+
+etc.
+
+Depending on time/usage and the scope of additional pending mods, I may provide
+script or updater to simplify this process. For now it is likely a 1x time cost to
+download and copy a couple of files (relatively simple).
+
+* Dependencies
+So far the only dependencies are (where x -> y implies x "depends on" y):
+
+- Legacy-EnhancedCommanders -> Legacy-BlackopsACUs
+
+* Incompatibility
+
+All mods are intentionally additive and should not "break" baseline LOUD AI
+functionality. They will replace existing mods that are considered part of the
+LOUD distribution, and proclaim incompaitibilities and dependencies where
+necessary. 
+
+For example, the initial mods would show up as "User Mods" under the Mod
+Manager, which is at the bottom of the list of mods. If a user selects the
+(Legacy)Enhanced Commanders mod, it will let you know if the current LOUD
+Enhanced Commander Mutator is selected and ask if you want to disable it and any
+other conflicts, while enabling any mods the newly selected item needs.
+
+Hopefully this retains a degree of safety and conflict resolution.
+
+If you are hosting a game under the LOUD moniker, and/or organizing games on the LOUD
+discord, and you would like to use these mods, it is highly likely other users do not
+have them since they are not bundled with LOUD.  Currently all interested parties
+need to grab the files to play.  Future automation/bundling may alleviate that though.
+
+Note: since these are user mods, 
+
+**DO NOT EXPECT support from the LOUD maintainers or ask for feature requests relative 
+to the legacy behavior in any of these mods**.
+
+Interested parties can file issues in the github repository, although I do not
+envision drastic changes. I may incorporate bug fixes and any desirable changes
+from the baseline LOUD distribution if they are relevant.
